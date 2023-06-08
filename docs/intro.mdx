@@ -1,0 +1,40 @@
+---
+sidebar_position: 1
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# What is Sensus?
+
+Sensus is a ultra-lowpower, Homeassistant-compatible environment and plant sensor. It started as a plant health monitoring sensor but ended up being a more general-purpose environment sensor with optional addons, one of which is the Plant Health Monitoring Addon.
+
+<div style={{display:'flex', width: "100%", justifyContent: 'center', gap: '10px', flexWrap: 'wrap'}}>
+    <img src={useBaseUrl('/img/introduction.jpg')} style={{maxHeight: '350px'}}/>
+    <img src={useBaseUrl('/img/wall-mounted.jpg')} style={{maxHeight: '350px'}}/>
+</div>
+
+## Main Features
+
+- Measures Temperature🌡️, Relative Humidity 💧, Illuminance ⛅ and Battery Voltage 🔋
+    - 🌱 Additional Plant Addon also adds Soil Temperature and Soil Moisture
+- **Homeassistant compatible** out of the box, thanks to the [BTHome data format](https://bthome.io/format/) [^1]
+- Transmits data via Bluetooth Low Energy and USB 🔌
+- Compatible with BLE4.0+ adapters
+- 100m of range when transmitting data via Bluetooth 📶 
+- Powered either via USB-C or a CR2032 battery 
+- Ultra-low power consumption, ~1 year battery life when powered from a [high-quality CR2032 battery](https://www.tme.eu/Document/8eb9b28999c260b79094c97a20531f07/cr2032-p.pdf) [^2] ⌛
+- RGB status LED 🚦
+- [**sensus-cli**](https://github.com/Ardelean-Calin/sensus-cli) command line interface that can be used to:
+    - Log real-time data via USB and save to a CSV file
+    - Log real-time data via Bluetooth and save to a CSV file not yet implemented
+    - Configure parameters such as time between measurements, Bluetooth name, LED behavior
+    - Power-safe firmware updates via USB and BLE [^3]
+    - Read device information such as firmware version and MAC address/serial number
+- Optional magnetic 3D printed case with plexiglass window available
+
+## Specifications
+
+
+[^1]: See the official [Homeassistant BTHome integration page](https://www.home-assistant.io/integrations/bthome) for more information.
+[^2]: Battery life can be increased slightly (or decreased) using the command-line interface to raise (or lower) the time between measurements.
+[^3]: BLE firmware updates are coming soon.
