@@ -114,7 +114,7 @@ const config = {
     }),
   scripts: [
     {
-      src: "https://plausible.calin.cloud/js/script.js",
+      src: "https://plausible.calin.cloud/js/script.outbound-links.js",
       defer: true,
       "data-domain": "sensus.klausen.tech",
     },
