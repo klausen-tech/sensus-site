@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Basic Usage
+# Homeassistant integration
 
 This page describes how to use Sensus as quickly as possible.
 

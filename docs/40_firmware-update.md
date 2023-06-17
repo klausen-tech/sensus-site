@@ -1,7 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 40
 ---
 
-# Firmware Update
+# Firmware Update 🧰
 
 Sensus can be updated via USB or over-the-air.  
