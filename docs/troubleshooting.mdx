@@ -1,0 +1,31 @@
+---
+title: Troubleshooting
+---
+
+# Troubleshooting
+
+## Sensus started to appear as unavailable in Homeassistant
+
+For Sensuses shipped before 24 May 2023, there is a firmware and hardware bug where a failing temperature sensor
+on the soil probe will cause the whole device to lock up. A software workaround has been implemented starting with
+firmware version `v0.0.2`.
+
+:::info 
+Unfortunately, due to a hardware bug in the Soil Probe, the steps below cannot fix the probe completely. That means, you will
+get the most important information, **soil moisture**, but soil temperature will no longer show up. A placeholder value of -100°C (-148°F)
+will appear instead.
+:::
+
+To update Sensus to the latest version, follow these steps:
+
+- Download the [latest sensus-cli release](https://github.com/Ardelean-Calin/sensus-cli/releases/latest)
+- Disconnect the probe
+- Connect Sensus via USB-C to your PC (make sure your cable supports data, as well as power) and press the reset button
+  - **Note:** With the probe disconnected, you should see the LED on Sensus execute a startup sequence
+- Update Sensus to the latest firmware by opening a Terminal / Command Prompt where sensus-cli is located and running:
+```
+sensus-cli update --port <YOUR_COM_PORT>
+```
+- **Important** wait until the CLI says that it successfully updated to the latest version. **Do not disconnect Sensus mid update!**
+
+Now you can connect the Probe again. If everything worked correctly, Sensus should now appear in Homeassistant.
