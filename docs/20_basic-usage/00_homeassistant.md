@@ -4,54 +4,25 @@ sidebar_position: 0
 
 # Homeassistant integration
 
-This page describes how to use Sensus as quickly as possible.
+Simply click the button below to open your Homeassistant Integrations tab:
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+[![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
 
-## Create your first Doc
+Due to Sensus using the [BTHome data format](https://bthome.io/), your device should automatically appear and present itself as configurable.
+**If it doesn't, make sure you have the Bluetooth integration enabled in Homeassistant.**
 
-Create a Markdown file at `docs/hello.md`:
+![](img/integration.webp)
 
-```md title="docs/hello.md"
-# Hello
+## Entity explainations
 
-This is my **first Docusaurus document**!
-```
+Here's a table of all the entities and their respective meaning:
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
-
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
-
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```js title="sidebars.js"
-module.exports = {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
-```
+| Entity              | Description | 
+| :---------------- |  :----- |
+| Battery    |   A flag indicating if the battery has a low charge or not. Will indicate "Low" when battery is getting dangerously low or when temperature is really low (due to batteries performing poorly in low temperatures)   |
+| Humidity          |   This is the relative air humidity, in percent, measured with the on-board SHTC3 sensor   |
+| Illuminance    |  This is the illuminance level measured in lux with the on-board OPT3001 sensor   |
+| Voltage |  This is the measured battery/supply voltage   |
+| Temperature |  This is the on-board temperature, in degrees Celsius, measured by the onboard SHTC3 sensor. <br/> <br/> Note: This entity is called "Temperature 1" when a soil probe is connected.   |
+| Moisture |  **Probe only** - The soil moisture, in percent   |
+| Temperature_2 |  **Probe only** - The soil temperature, in degrees Celsius   |

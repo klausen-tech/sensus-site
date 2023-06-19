@@ -38,6 +38,9 @@
   .figure-container {
     flex-direction: column;
   }
+  .specifications {
+    width: 100%;
+  }
 }
 
 .figure-container figure {

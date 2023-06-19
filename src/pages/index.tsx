@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             href="https://www.tindie.com/products/29695/">
-            Buy 🛒
+            Buy on Tindie 🛒
           </Link>
           <Link
             className="button button--secondary button--lg"

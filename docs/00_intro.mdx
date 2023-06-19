@@ -4,6 +4,7 @@ sidebar_position: 00
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Table from '@site/src/components/specifications'
 
 # What is Sensus?
 
@@ -33,9 +34,66 @@ Sensus is a ultra-lowpower, Homeassistant-compatible environment and plant senso
     - Read device information such as firmware version and MAC address/serial number
 - Optional magnetic 3D printed case with plexiglass window available
 
-## Specifications
+## Specifications - Sensus 
 
+:::info
+All accuracy related specifications assume the device is functioning within the recommended operating temperature range of -10°C - 45°C (14°F - 114°F)
+:::
+
+<Table values={{
+    "Operating voltage": "1.7V - 3.6V", 
+    "Supply current (while on battery)": "24μA typ.", 
+    "Operating temperature": "-10°C - 45°C (14°F - 114°F)", 
+    "Operating relative humidity": "any %"
+}}/>
+
+
+### Temperature and RH sensor
+<Table values={{
+    "Sensor": "Sensirion SHTC3", 
+    "Temperature range": "-40 - 125°C (-40 - 257°F)",
+    "Typical temperature accuracy": "±0.2°C (±0.36°F)",
+    "Maximum temperature accuracy": "±0.5°C (±0.9°F)",
+    "Humidity range": "0 - 100%",
+    "Typical relative humidity accuracy": "±2%",
+}}/>
+
+
+### Illuminance sensor
+<Table values={{
+    "Sensor": "Texas Instruments OPT3001", 
+    "Measurement range": "0 Lux - 83865.6 Lux",
+}}/>
+
+## Specifications - Soil Probe
+
+### Probe soil moisture sensor
+<Table values={{
+    "Sensor": "Custom RC oscillator", 
+    "Type": "Capacitive; non-contact",
+    "Measurement frequency": "10kHz - 2MHz",
+    "Calibration": "Simple linear calibration; Calibrateable via CLI"
+}}/>
+
+### Probe temperature sensor
+<Table values={{
+    "Sensor": "Texas Instruments TMP112", 
+    "Measurement range": "-40 - 125°C (-40 - 257°F)",
+    "Typical accuracy": "±0.5°C (±0.9°F)",
+    "Maximum accuracy": "±1.0°C (±1.8°F)"
+}}/>
+
+## Commonly asked questions
+### Is the device waterproof?
+The soil probe is waterproof, however the main control unit (the rectangular PCB) is not due to the limitations of a
+3D printed case.
+I recommend to exercise caution with the main unit and avoid anything more than light splashes, even though it might be fine.
+:::info
+I did test the Sensus in outside conditions for long periods of time and with occasional water spraying on the main unit and it still appears to function, however I can't **recommend**
+you do the same. You can, but it's on your own risk.
+:::
 
 [^1]: See the official [Homeassistant BTHome integration page](https://www.home-assistant.io/integrations/bthome) for more information.
 [^2]: Battery life can be increased slightly (or decreased) using the command-line interface to raise (or lower) the time between measurements.
 [^3]: BLE firmware updates are coming soon.
+[^4]: 
