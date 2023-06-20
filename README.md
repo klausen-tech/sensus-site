@@ -1,6 +1,7 @@
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+To see the website in action, visit [my website](https://sensus.klausen.tech?source=sensus_site).
 
 ### Installation
 
