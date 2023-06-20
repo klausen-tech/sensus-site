@@ -1,0 +1,549 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/calin
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 19
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 16
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 254
+    content: "\e]0;calin@calinpc:~\e\\\e]7;file://calinpc/home/calin\e\\\e[?2004h\e]0;calin@calinpc: ~\a\e[01;32mcalin@calinpc\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1208
+    content: s
+  - delay: 100
+    content: e
+  - delay: 163
+    content: 'n'
+  - delay: 97
+    content: s
+  - delay: 100
+    content: u
+  - delay: 63
+    content: s
+  - delay: 119
+    content: ' '
+  - delay: 224
+    content: i
+  - delay: 201
+    content: 'n'
+  - delay: 98
+    content: f
+  - delay: 102
+    content: o
+  - delay: 524
+    content: ' '
+  - delay: 142
+    content: '-'
+  - delay: 120
+    content: '-'
+  - delay: 181
+    content: p
+  - delay: 138
+    content: o
+  - delay: 83
+    content: r
+  - delay: 182
+    content: t
+  - delay: 142
+    content: ' '
+  - delay: 161
+    content: /
+  - delay: 118
+    content: d
+  - delay: 46
+    content: e
+  - delay: 425
+    content: v/
+  - delay: 602
+    content: t
+  - delay: 138
+    content: t
+  - delay: 141
+    content: 'y'
+  - delay: 239
+    content: U
+  - delay: 246
+    content: 'SB0 '
+  - delay: 561
+    content: "\r\n\e[?2004l\r"
+  - delay: 116
+    content: "- Current firmware version        \e[1m :  v0.0.1\e[0m\r\n- MAC address                     \e[1m :  C0:42:3E:04:41:EA\e[0m\r\n"
+  - delay: 11
+    content: "\e]0;calin@calinpc:~\e\\\e]7;file://calinpc/home/calin\e\\\e[?2004h\e]0;calin@calinpc: ~\a\e[01;32mcalin@calinpc\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1444
+    content: s
+  - delay: 142
+    content: e
+  - delay: 140
+    content: 'n'
+  - delay: 100
+    content: s
+  - delay: 121
+    content: u
+  - delay: 79
+    content: s
+  - delay: 426
+    content: ' '
+  - delay: 225
+    content: u
+  - delay: 198
+    content: p
+  - delay: 181
+    content: d
+  - delay: 138
+    content: a
+  - delay: 204
+    content: t
+  - delay: 81
+    content: e
+  - delay: 140
+    content: ' '
+  - delay: 142
+    content: '-'
+  - delay: 141
+    content: '-'
+  - delay: 203
+    content: p
+  - delay: 137
+    content: o
+  - delay: 102
+    content: r
+  - delay: 163
+    content: t
+  - delay: 321
+    content: ' '
+  - delay: 263
+    content: /
+  - delay: 183
+    content: d
+  - delay: 57
+    content: e
+  - delay: 828
+    content: v
+  - delay: 302
+    content: /
+  - delay: 301
+    content: t
+  - delay: 162
+    content: t
+  - delay: 101
+    content: 'y'
+  - delay: 302
+    content: U
+  - delay: 165
+    content: 'SB0 '
+  - delay: 523
+    content: "\r\n\e[?2004l\r"
+  - delay: 435
+    content: "Your sensus needs updating:\e[0m\r\nCurrent firmware version    \e[33m\e[1mv0.0.1\e[0m\r\nLatest firmware version     \e[32m\e[1mv0.0.2\e[0m\r\n"
+  - delay: 1112
+    content: "\r\e[?25lUpdating Firmware...  [------------------------------------]    0%"
+  - delay: 63
+    content: "\r\e[?25lUpdating Firmware...  [------------------------------------]    1%"
+  - delay: 75
+    content: "\r\e[?25lUpdating Firmware...  [------------------------------------]    2%"
+  - delay: 46
+    content: "\r\e[?25lUpdating Firmware...  [#-----------------------------------]    2%"
+  - delay: 15
+    content: "\r\e[?25lUpdating Firmware...  [#-----------------------------------]    3%"
+  - delay: 76
+    content: "\r\e[?25lUpdating Firmware...  [#-----------------------------------]    4%"
+  - delay: 62
+    content: "\r\e[?25lUpdating Firmware...  [#-----------------------------------]    5%"
+  - delay: 42
+    content: "\r\e[?25lUpdating Firmware...  [##----------------------------------]    5%"
+  - delay: 27
+    content: "\r\e[?25lUpdating Firmware...  [##----------------------------------]    6%"
+  - delay: 192
+    content: "\r\e[?25lUpdating Firmware...  [##----------------------------------]    7%"
+  - delay: 161
+    content: "\r\e[?25lUpdating Firmware...  [##----------------------------------]    8%"
+  - delay: 22
+    content: "\r\e[?25lUpdating Firmware...  [###---------------------------------]    8%"
+  - delay: 49
+    content: "\r\e[?25lUpdating Firmware...  [###---------------------------------]    9%"
+  - delay: 60
+    content: "\r\e[?25lUpdating Firmware...  [###---------------------------------]   10%"
+  - delay: 70
+    content: "\r\e[?25lUpdating Firmware...  [###---------------------------------]   11%"
+  - delay: 7
+    content: "\r\e[?25lUpdating Firmware...  [####--------------------------------]   11%"
+  - delay: 36
+    content: "\r\e[?25lUpdating Firmware...  [####--------------------------------]   11%  00:00:07"
+  - delay: 27
+    content: "\r\e[?25lUpdating Firmware...  [####--------------------------------]   12%  00:00:07"
+  - delay: 58
+    content: "\r\e[?25lUpdating Firmware...  [####--------------------------------]   13%  00:00:07"
+  - delay: 136
+    content: "\r\e[?25lUpdating Firmware...  [#####-------------------------------]   13%  00:00:07"
+  - delay: 6
+    content: "\r\e[?25lUpdating Firmware...  [#####-------------------------------]   14%  00:00:07"
+  - delay: 59
+    content: "\r\e[?25lUpdating Firmware...  [#####-------------------------------]   15%  00:00:07"
+  - delay: 64
+    content: "\r\e[?25lUpdating Firmware...  [#####-------------------------------]   16%  00:00:07"
+  - delay: 37
+    content: "\r\e[?25lUpdating Firmware...  [######------------------------------]   16%  00:00:07"
+  - delay: 25
+    content: "\r\e[?25lUpdating Firmware...  [######------------------------------]   17%  00:00:07"
+  - delay: 57
+    content: "\r\e[?25lUpdating Firmware...  [######------------------------------]   18%  00:00:07"
+  - delay: 37
+    content: "\r\e[?25lUpdating Firmware...  [######------------------------------]   18%  00:00:06"
+  - delay: 25
+    content: "\r\e[?25lUpdating Firmware...  [######------------------------------]   19%  00:00:06"
+  - delay: 24
+    content: "\r\e[?25lUpdating Firmware...  [#######-----------------------------]   19%  00:00:06"
+  - delay: 31
+    content: "\r\e[?25lUpdating Firmware...  [#######-----------------------------]   20%  00:00:06"
+  - delay: 139
+    content: "\r\e[?25lUpdating Firmware...  [#######-----------------------------]   21%  00:00:06"
+  - delay: 66
+    content: "\r\e[?25lUpdating Firmware...  [#######-----------------------------]   22%  00:00:06"
+  - delay: 13
+    content: "\r\e[?25lUpdating Firmware...  [########----------------------------]   22%  00:00:06"
+  - delay: 44
+    content: "\r\e[?25lUpdating Firmware...  [########----------------------------]   23%  00:00:06"
+  - delay: 63
+    content: "\r\e[?25lUpdating Firmware...  [########----------------------------]   24%  00:00:06"
+  - delay: 61
+    content: "\r\e[?25lUpdating Firmware...  [#########---------------------------]   25%  00:00:06"
+  - delay: 65
+    content: "\r\e[?25lUpdating Firmware...  [#########---------------------------]   26%  00:00:06"
+  - delay: 137
+    content: "\r\e[?25lUpdating Firmware...  [#########---------------------------]   27%  00:00:06"
+  - delay: 5
+    content: "\r\e[?25lUpdating Firmware...  [#########---------------------------]   27%  00:00:05"
+  - delay: 40
+    content: "\r\e[?25lUpdating Firmware...  [##########--------------------------]   27%  00:00:05"
+  - delay: 14
+    content: "\r\e[?25lUpdating Firmware...  [##########--------------------------]   28%  00:00:05"
+  - delay: 74
+    content: "\r\e[?25lUpdating Firmware...  [##########--------------------------]   29%  00:00:05"
+  - delay: 57
+    content: "\r\e[?25lUpdating Firmware...  [##########--------------------------]   30%  00:00:05"
+  - delay: 42
+    content: "\r\e[?25lUpdating Firmware...  [###########-------------------------]   30%  00:00:05"
+  - delay: 27
+    content: "\r\e[?25lUpdating Firmware...  [###########-------------------------]   31%  00:00:05"
+  - delay: 70
+    content: "\r\e[?25lUpdating Firmware...  [###########-------------------------]   32%  00:00:05"
+  - delay: 59
+    content: "\r\e[?25lUpdating Firmware...  [###########-------------------------]   33%  00:00:05"
+  - delay: 26
+    content: "\r\e[?25lUpdating Firmware...  [############------------------------]   33%  00:00:05"
+  - delay: 117
+    content: "\r\e[?25lUpdating Firmware...  [############------------------------]   34%  00:00:05"
+  - delay: 56
+    content: "\r\e[?25lUpdating Firmware...  [############------------------------]   35%  00:00:05"
+  - delay: 71
+    content: "\r\e[?25lUpdating Firmware...  [############------------------------]   36%  00:00:05"
+  - delay: 6
+    content: "\r\e[?25lUpdating Firmware...  [#############-----------------------]   36%  00:00:05"
+  - delay: 59
+    content: "\r\e[?25lUpdating Firmware...  [#############-----------------------]   37%  00:00:05"
+  - delay: 62
+    content: "\r\e[?25lUpdating Firmware...  [#############-----------------------]   38%  00:00:05"
+  - delay: 48
+    content: "\r\e[?25lUpdating Firmware...  [#############-----------------------]   38%  00:00:04"
+  - delay: 14
+    content: "\r\e[?25lUpdating Firmware...  [##############----------------------]   38%  00:00:04"
+  - delay: 7
+    content: "\r\e[?25lUpdating Firmware...  [##############----------------------]   39%  00:00:04"
+  - delay: 58
+    content: "\r\e[?25lUpdating Firmware...  [##############----------------------]   40%  00:00:04"
+  - delay: 139
+    content: "\r\e[?25lUpdating Firmware...  [##############----------------------]   41%  00:00:04"
+  - delay: 42
+    content: "\r\e[?25lUpdating Firmware...  [###############---------------------]   41%  00:00:04"
+  - delay: 26
+    content: "\r\e[?25lUpdating Firmware...  [###############---------------------]   42%  00:00:04"
+  - delay: 62
+    content: "\r\e[?25lUpdating Firmware...  [###############---------------------]   43%  00:00:04"
+  - delay: 74
+    content: "\r\e[?25lUpdating Firmware...  [###############---------------------]   44%  00:00:04"
+  - delay: 26
+    content: "\r\e[?25lUpdating Firmware...  [################--------------------]   44%  00:00:04"
+  - delay: 33
+    content: "\r\e[?25lUpdating Firmware...  [################--------------------]   45%  00:00:04"
+  - delay: 67
+    content: "\r\e[?25lUpdating Firmware...  [################--------------------]   46%  00:00:04"
+  - delay: 135
+    content: "\r\e[?25lUpdating Firmware...  [################--------------------]   47%  00:00:04"
+  - delay: 13
+    content: "\r\e[?25lUpdating Firmware...  [#################-------------------]   47%  00:00:04"
+  - delay: 48
+    content: "\r\e[?25lUpdating Firmware...  [#################-------------------]   48%  00:00:04"
+  - delay: 66
+    content: "\r\e[?25lUpdating Firmware...  [#################-------------------]   49%  00:00:04"
+  - delay: 67
+    content: "\r\e[?25lUpdating Firmware...  [##################------------------]   50%  00:00:04"
+  - delay: 34
+    content: "\r\e[?25lUpdating Firmware...  [##################------------------]   50%  00:00:03"
+  - delay: 34
+    content: "\r\e[?25lUpdating Firmware...  [##################------------------]   51%  00:00:03"
+  - delay: 67
+    content: "\r\e[?25lUpdating Firmware...  [##################------------------]   52%  00:00:03"
+  - delay: 47
+    content: "\r\e[?25lUpdating Firmware...  [###################-----------------]   52%  00:00:03"
+  - delay: 19
+    content: "\r\e[?25lUpdating Firmware...  [###################-----------------]   53%  00:00:03"
+  - delay: 536
+    content: "\r\e[?25lUpdating Firmware...  [###################-----------------]   54%  00:00:03"
+  - delay: 57
+    content: "\r\e[?25lUpdating Firmware...  [###################-----------------]   55%  00:00:03"
+  - delay: 39
+    content: "\r\e[?25lUpdating Firmware...  [####################----------------]   55%  00:00:03"
+  - delay: 27
+    content: "\r\e[?25lUpdating Firmware...  [####################----------------]   56%  00:00:03"
+  - delay: 70
+    content: "\r\e[?25lUpdating Firmware...  [####################----------------]   57%  00:00:03"
+  - delay: 58
+    content: "\r\e[?25lUpdating Firmware...  [####################----------------]   58%  00:00:03"
+  - delay: 19
+    content: "\r\e[?25lUpdating Firmware...  [#####################---------------]   58%  00:00:03"
+  - delay: 45
+    content: "\r\e[?25lUpdating Firmware...  [#####################---------------]   59%  00:00:03"
+  - delay: 65
+    content: "\r\e[?25lUpdating Firmware...  [#####################---------------]   60%  00:00:03"
+  - delay: 140
+    content: "\r\e[?25lUpdating Firmware...  [#####################---------------]   61%  00:00:03"
+  - delay: 6
+    content: "\r\e[?25lUpdating Firmware...  [######################--------------]   61%  00:00:03"
+  - delay: 60
+    content: "\r\e[?25lUpdating Firmware...  [######################--------------]   62%  00:00:03"
+  - delay: 45
+    content: "\r\e[?25lUpdating Firmware...  [######################--------------]   62%  00:00:02"
+  - delay: 12
+    content: "\r\e[?25lUpdating Firmware...  [######################--------------]   63%  00:00:02"
+  - delay: 54
+    content: "\r\e[?25lUpdating Firmware...  [#######################-------------]   63%  00:00:02"
+  - delay: 7
+    content: "\r\e[?25lUpdating Firmware...  [#######################-------------]   64%  00:00:02"
+  - delay: 57
+    content: "\r\e[?25lUpdating Firmware...  [#######################-------------]   65%  00:00:02"
+  - delay: 64
+    content: "\r\e[?25lUpdating Firmware...  [#######################-------------]   66%  00:00:02"
+  - delay: 41
+    content: "\r\e[?25lUpdating Firmware...  [########################------------]   66%  00:00:02"
+  - delay: 99
+    content: "\r\e[?25lUpdating Firmware...  [########################------------]   67%  00:00:02"
+  - delay: 57
+    content: "\r\e[?25lUpdating Firmware...  [########################------------]   68%  00:00:02"
+  - delay: 64
+    content: "\r\e[?25lUpdating Firmware...  [########################------------]   69%  00:00:02"
+  - delay: 27
+    content: "\r\e[?25lUpdating Firmware...  [#########################-----------]   69%  00:00:02"
+  - delay: 33
+    content: "\r\e[?25lUpdating Firmware...  [#########################-----------]   70%  00:00:02"
+  - delay: 67
+    content: "\r\e[?25lUpdating Firmware...  [#########################-----------]   71%  00:00:02"
+  - delay: 68
+    content: "\r\e[?25lUpdating Firmware...  [#########################-----------]   72%  00:00:02"
+  - delay: 14
+    content: "\r\e[?25lUpdating Firmware...  [##########################----------]   72%  00:00:02"
+  - delay: 48
+    content: "\r\e[?25lUpdating Firmware...  [##########################----------]   73%  00:00:02"
+  - delay: 152
+    content: "\r\e[?25lUpdating Firmware...  [##########################----------]   74%  00:00:02"
+  - delay: 60
+    content: "\r\e[?25lUpdating Firmware...  [###########################---------]   75%  00:00:02"
+  - delay: 19
+    content: "\r\e[?25lUpdating Firmware...  [###########################---------]   75%  00:00:01"
+  - delay: 48
+    content: "\r\e[?25lUpdating Firmware...  [###########################---------]   76%  00:00:01"
+  - delay: 75
+    content: "\r\e[?25lUpdating Firmware...  [###########################---------]   77%  00:00:01"
+  - delay: 48
+    content: "\r\e[?25lUpdating Firmware...  [############################--------]   77%  00:00:01"
+  - delay: 13
+    content: "\r\e[?25lUpdating Firmware...  [############################--------]   78%  00:00:01"
+  - delay: 70
+    content: "\r\e[?25lUpdating Firmware...  [############################--------]   79%  00:00:01"
+  - delay: 66
+    content: "\r\e[?25lUpdating Firmware...  [############################--------]   80%  00:00:01"
+  - delay: 112
+    content: "\r\e[?25lUpdating Firmware...  [#############################-------]   80%  00:00:01"
+  - delay: 29
+    content: "\r\e[?25lUpdating Firmware...  [#############################-------]   81%  00:00:01"
+  - delay: 68
+    content: "\r\e[?25lUpdating Firmware...  [#############################-------]   82%  00:00:01"
+  - delay: 58
+    content: "\r\e[?25lUpdating Firmware...  [#############################-------]   83%  00:00:01"
+  - delay: 18
+    content: "\r\e[?25lUpdating Firmware...  [##############################------]   83%  00:00:01"
+  - delay: 47
+    content: "\r\e[?25lUpdating Firmware...  [##############################------]   84%  00:00:01"
+  - delay: 57
+    content: "\r\e[?25lUpdating Firmware...  [##############################------]   85%  00:00:01"
+  - delay: 67
+    content: "\r\e[?25lUpdating Firmware...  [##############################------]   86%  00:00:01"
+  - delay: 6
+    content: "\r\e[?25lUpdating Firmware...  [###############################-----]   86%  00:00:01"
+  - delay: 225
+    content: "\r\e[?25lUpdating Firmware...  [###############################-----]   87%  00:00:01"
+  - delay: 48
+    content: "\r\e[?25lUpdating Firmware...  [###############################-----]   87%  00:00:00"
+  - delay: 22
+    content: "\r\e[?25lUpdating Firmware...  [###############################-----]   88%  00:00:00"
+  - delay: 61
+    content: "\r\e[?25lUpdating Firmware...  [################################----]   88%  00:00:00"
+  - delay: 6
+    content: "\r\e[?25lUpdating Firmware...  [################################----]   89%  00:00:00"
+  - delay: 63
+    content: "\r\e[?25lUpdating Firmware...  [################################----]   90%  00:00:00"
+  - delay: 68
+    content: "\r\e[?25lUpdating Firmware...  [################################----]   91%  00:00:00"
+  - delay: 43
+    content: "\r\e[?25lUpdating Firmware...  [#################################---]   91%  00:00:00"
+  - delay: 27
+    content: "\r\e[?25lUpdating Firmware...  [#################################---]   92%  00:00:00"
+  - delay: 59
+    content: "\r\e[?25lUpdating Firmware...  [#################################---]   93%  00:00:00"
+  - delay: 143
+    content: "\r\e[?25lUpdating Firmware...  [#################################---]   94%  00:00:00"
+  - delay: 27
+    content: "\r\e[?25lUpdating Firmware...  [##################################--]   94%  00:00:00"
+  - delay: 35
+    content: "\r\e[?25lUpdating Firmware...  [##################################--]   95%  00:00:00"
+  - delay: 65
+    content: "\r\e[?25lUpdating Firmware...  [##################################--]   96%  00:00:00"
+  - delay: 74
+    content: "\r\e[?25lUpdating Firmware...  [##################################--]   97%  00:00:00"
+  - delay: 13
+    content: "\r\e[?25lUpdating Firmware...  [###################################-]   97%  00:00:00"
+  - delay: 48
+    content: "\r\e[?25lUpdating Firmware...  [###################################-]   98%  00:00:00"
+  - delay: 69
+    content: "\r\e[?25lUpdating Firmware...  [###################################-]   99%  00:00:00"
+  - delay: 63
+    content: "\r\e[?25lUpdating Firmware...  [####################################]  100%          "
+  - delay: 420
+    content: "\e[?25h\r\n\e[32mDFU Done! Waiting for reset...\e[0m\r\n"
+  - delay: 10
+    content: "Attempting to connect to Sensus... [Attempt 1 of 20]\e[0m\r\n"
+  - delay: 1040
+    content: "Attempting to connect to Sensus... [Attempt 2 of 20]\e[0m\r\n"
+  - delay: 1034
+    content: "Attempting to connect to Sensus... [Attempt 3 of 20]\e[0m\r\n"
+  - delay: 1037
+    content: "Attempting to connect to Sensus... [Attempt 4 of 20]\e[0m\r\n"
+  - delay: 1039
+    content: "Attempting to connect to Sensus... [Attempt 5 of 20]\e[0m\r\n"
+  - delay: 1039
+    content: "Attempting to connect to Sensus... [Attempt 6 of 20]\e[0m\r\n"
+  - delay: 1039
+    content: "Attempting to connect to Sensus... [Attempt 7 of 20]\e[0m\r\n"
+  - delay: 1037
+    content: "Attempting to connect to Sensus... [Attempt 8 of 20]\e[0m\r\n"
+  - delay: 40
+    content: "\e[32mSuccessfully updated to  v0.0.2\e[0m\r\n"
+  - delay: 28
+    content: "\e]0;calin@calinpc:~\e\\\e]7;file://calinpc/home/calin\e\\\e[?2004h\e]0;calin@calinpc: ~\a\e[01;32mcalin@calinpc\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 2086
+    content: "\e[?2004l\r\r\nlogout\r\n"

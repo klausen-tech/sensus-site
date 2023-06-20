@@ -1,0 +1,503 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/calin
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 19
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 16
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 242
+    content: "\e]0;calin@calinpc:~\e\\\e]7;file://calinpc/home/calin\e\\\e[?2004h\e]0;calin@calinpc: ~\a\e[01;32mcalin@calinpc\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 536
+    content: s
+  - delay: 139
+    content: e
+  - delay: 326
+    content: 'n'
+  - delay: 703
+    content: s
+  - delay: 159
+    content: u
+  - delay: 84
+    content: s
+  - delay: 180
+    content: ' '
+  - delay: 142
+    content: c
+  - delay: 77
+    content: o
+  - delay: 145
+    content: 'n'
+  - delay: 118
+    content: f
+  - delay: 143
+    content: i
+  - delay: 140
+    content: g
+  - delay: 423
+    content: '-'
+  - delay: 245
+    content: g
+  - delay: 77
+    content: e
+  - delay: 140
+    content: t
+  - delay: 222
+    content: ' '
+  - delay: 122
+    content: '-'
+  - delay: 141
+    content: '-'
+  - delay: 181
+    content: p
+  - delay: 159
+    content: o
+  - delay: 85
+    content: r
+  - delay: 180
+    content: t
+  - delay: 82
+    content: ' '
+  - delay: 281
+    content: /
+  - delay: 182
+    content: d
+  - delay: 40
+    content: e
+  - delay: 448
+    content: v/
+  - delay: 519
+    content: t
+  - delay: 161
+    content: t
+  - delay: 200
+    content: 'y'
+  - delay: 322
+    content: U
+  - delay: 168
+    content: 'SB0 '
+  - delay: 1748
+    content: "\r\n\e[?2004l\r"
+  - delay: 106
+    content: "[general]\r\nname = \"Sensus\"\r\n\r\n[battery]\r\nonboard-sample-interval = \"30s\"\r\nprobe-sample-interval = \"30s\"\r\n\r\n[plugged]\r\nonboard-sample-interval = \"10s\"\r\nprobe-sample-interval = \"10s\"\r\n\r\n[probe_calibration]\r\n100000 = \"100.0%\"\r\n1600000 = \"0.0%\"\r\n\r\n"
+  - delay: 21
+    content: "\e]0;calin@calinpc:~\e\\\e]7;file://calinpc/home/calin\e\\\e[?2004h\e]0;calin@calinpc: ~\a\e[01;32mcalin@calinpc\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1302
+    content: 'sensus config-get --port /dev/ttyUSB0 '
+  - delay: 784
+    content: '>'
+  - delay: 604
+    content: ' '
+  - delay: 141
+    content: c
+  - delay: 143
+    content: o
+  - delay: 160
+    content: 'n'
+  - delay: 523
+    content: f
+  - delay: 143
+    content: i
+  - delay: 282
+    content: g
+  - delay: 242
+    content: .
+  - delay: 462
+    content: t
+  - delay: 222
+    content: o
+  - delay: 262
+    content: m
+  - delay: 240
+    content: l
+  - delay: 384
+    content: "\r\n\e[?2004l\r"
+  - delay: 129
+    content: "\e]0;calin@calinpc:~\e\\\e]7;file://calinpc/home/calin\e\\\e[?2004h\e]0;calin@calinpc: ~\a\e[01;32mcalin@calinpc\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 814
+    content: 'n'
+  - delay: 124
+    content: a
+  - delay: 80
+    content: 'n'
+  - delay: 161
+    content: o
+  - delay: 162
+    content: ' '
+  - delay: 120
+    content: c
+  - delay: 80
+    content: o
+  - delay: 118
+    content: 'n'
+  - delay: 506
+    content: f
+  - delay: 120
+    content: i
+  - delay: 147
+    content: 'g.toml '
+  - delay: 842
+    content: "\r\n\e[?2004l\r\e[?2004h\e[?1049h\e[22;0;0t\e[1;19r\e(B\e[m\e[4l\e[?7h\e[39;49m\e[?1h\e=\e[?1h\e=\e[?25l\e[39;49m\e(B\e[m\e[H\e[2J\e[17;38H\e(B\e[0;7m[ Reading... ]\e(B\e[m\e[17;36H\e(B\e[0;7m[ Read 15 lines ]\e(B\e[m\e[H\e(B\e[0;7m  GNU nano 6.2                           config.toml                                    \e[1;87H\e(B\e[m\r\e[18d\e(B\e[0;7m^G\e(B\e[m Help\e[15G\e(B\e[0;7m^O\e(B\e[m Write Out  \e(B\e[0;7m^W\e(B\e[m Where Is   \e(B\e[0;7m^K\e(B\e[m Cut\e[18;57H\e(B\e[0;7m^T\e(B\e[m Execute    \e(B\e[0;7m^C\e(B\e[m Location\r\e[19d\e(B\e[0;7m^X\e(B\e[m Exit\e[15G\e(B\e[0;7m^R\e(B\e[m Read File  \e(B\e[0;7m^\\\e(B\e[m Replace    \e(B\e[0;7m^U\e(B\e[m Paste\e[57G\e(B\e[0;7m^J\e(B\e[m Justify    \e(B\e[0;7m^/\e(B\e[m Go To Line\r\e[2d\e(B\e[0;1m\e[32m[general]\r\e[3d\e[39m\e(B\e[mname = \"Sensus\"\r\e[5d\e(B\e[0;1m\e[32m[battery]\r\e[6d\e[39m\e(B\e[monboard-sample-interval = \"30s\"\r\e[7dprobe-sample-interval = \"30s\"\r\e[9d\e(B\e[0;1m\e[32m[plugged]\r\e[10d\e[39m\e(B\e[monboard-sample-interval = \"10s\"\r\e[11dprobe-sample-interval = \"10s\"\r\e[13d\e(B\e[0;1m\e[32m[probe_calibration]\r\e[14d\e[39m\e(B\e[m100000 = \"100.0%\"\r\e[15d1600000 = \"0.0%\"\r\e[2d\e[?12l\e[?25h"
+  - delay: 1105
+    content: "\e[?25l\e[?12l\e[?25h\e[3d"
+  - delay: 905
+    content: "\e[?25l\e[?12l\e[?25h\e[4d"
+  - delay: 442
+    content: "\e[?25l\e[?12l\e[?25h\e[5d"
+  - delay: 265
+    content: "\e[?25l\e[?12l\e[?25h\e[6d"
+  - delay: 885
+    content: "\e[?25l\e[?12l\e[?25h\e[6;32H"
+  - delay: 222
+    content: "\e[?25l\e[?12l\e[?25h\b"
+  - delay: 462
+    content: "\e[?25l\e[1;54H\e(B\e[0;7m*\e[87G\e(B\e[m\e[?12l\e[?25h\e[6;30H\"\e[K\b"
+  - delay: 200
+    content: "\e[?25l\e[?12l\e[?25h\b\"\e[K\b"
+  - delay: 201
+    content: "\e[?25l\e[?12l\e[?25h\b\"\e[K\b"
+  - delay: 324
+    content: "\e[?25l\e[?12l\e[?25h1\"\b"
+  - delay: 240
+    content: "\e[?25l\e[?12l\e[?25hm\"\b"
+  - delay: 503
+    content: "\e[?25l\e[?12l\e[?25h3\"\b"
+  - delay: 141
+    content: "\e[?25l\e[?12l\e[?25h0\"\b"
+  - delay: 302
+    content: "\e[?25l\e[?12l\e[?25hs\"\b"
+  - delay: 547
+    content: "\e[?25l\e[?12l\e[?25h\e[7;30H"
+  - delay: 440
+    content: "\e[?25l\e[?12l\e[?25h\b"
+  - delay: 183
+    content: "\e[?25l\e[?12l\e[?25h\b"
+  - delay: 482
+    content: "\e[?25l\e[?12l\e[?25h\bs\"\e[K\b\b"
+  - delay: 344
+    content: "\e[?25l\e[?12l\e[?25h\bs\"\e[K\b\b"
+  - delay: 260
+    content: "\e[?25l\r\e[17d\e[K\e[?12l\e[?25h\e[7;26H1s\"\b\b"
+  - delay: 322
+    content: "\e[?25l\e[?12l\e[?25h5s\"\b\b"
+  - delay: 1391
+    content: "\e[?25l\e[?12l\e[?25h\r\e[8d"
+  - delay: 181
+    content: "\e[?25l\e[?12l\e[?25h\e[9;10H"
+  - delay: 160
+    content: "\e[?25l\e[?12l\e[?25h\e[10;28H"
+  - delay: 140
+    content: "\e[?25l\e[?12l\e[?25h\e[11d"
+  - delay: 201
+    content: "\e[?25l\e[?12l\e[?25h\r\e[12d"
+  - delay: 183
+    content: "\e[?25l\e[?12l\e[?25h\e[13;20H"
+  - delay: 224
+    content: "\e[?25l\e[?12l\e[?25h\e[14d\b\b"
+  - delay: 341
+    content: "\e[?25l\e[?12l\e[?25h\e[15d\b"
+  - delay: 221
+    content: "\e[?25l\e[?12l\e[?25h\b"
+  - delay: 160
+    content: "\e[?25l\e[?12l\e[?25h\b"
+  - delay: 183
+    content: "\e[?25l\e[?12l\e[?25h\b"
+  - delay: 161
+    content: "\e[?25l\e[?12l\e[?25h\b"
+  - delay: 322
+    content: "\e[?25l\e[?12l\e[?25h\b"
+  - delay: 201
+    content: "\e[?25l\e[?12l\e[?25h10.0%\"\e[13G"
+  - delay: 1933
+    content: "\e[?25l\e[?12l\e[?25h40.0%\"\e[14G"
+  - delay: 322
+    content: "\e[?25l\e[?12l\e[?25h.0%\"\e[K\b\b\b\b"
+  - delay: 1672
+    content: "\e[?25l\e[18d         \e(B\e[0;7mM-D\e(B\e[m DOS Format        \e(B\e[0;7mM-A\e(B\e[m Append            \e(B\e[0;7mM-B\e(B\e[m Backup File\e[19;2H\e(B\e[0;7mC\e(B\e[m Cancel             \e(B\e[0;7mM-M\e(B\e[m Mac Format        \e(B\e[0;7mM-P\e(B\e[m Prepend           \e(B\e[0;7m^T\e(B\e[m Browse\e[K\r\e[17d\e(B\e[0;7mFile Name to Write: config.toml                                                         \e[17;32H\e(B\e[m\e[?12l\e[?25h"
+  - delay: 301
+    content: "\e[?25l\e[37G\e[1K \e(B\e[0;7m[ Writing... ]\e(B\e[m\e[K\e[1;54H\e(B\e[0;7m \e[87G\e(B\e[m\e[17;36H\e(B\e[0;7m[ Wrote 15 lines ]\e(B\e[m\e[18;15H\e(B\e[0;7m^O\e(B\e[m Write Out  \e(B\e[0;7m^W\e(B\e[m Where Is   \e(B\e[0;7m^K\e(B\e[m Cut        \e(B\e[0;7m^T\e(B\e[m Execute    \e(B\e[0;7m^C\e(B\e[m Location\e[19;2H\e(B\e[0;7mX\e(B\e[m Exit       \e(B\e[0;7m^R\e(B\e[m Read File  \e(B\e[0;7m^\\\e(B\e[m Replace    \e(B\e[0;7m^U\e(B\e[m Paste      \e(B\e[0;7m^J\e(B\e[m Justify    \e(B\e[0;7m^/\e(B\e[m Go To Line\e[?12l\e[?25h\e[15;14H"
+  - delay: 785
+    content: "\e[?25l\r\e[17d\e[J\e[19d\e[?12l\e[?25h\e[19;1H\e[?1049l\e[23;0;0t\r\e[?1l\e>\e[?2004l\e]0;calin@calinpc:~\e\\\e]7;file://calinpc/home/calin\e\\\e[?2004h\e]0;calin@calinpc: ~\a\e[01;32mcalin@calinpc\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1874
+    content: s
+  - delay: 116
+    content: e
+  - delay: 204
+    content: 'n'
+  - delay: 361
+    content: s
+  - delay: 526
+    content: u
+  - delay: 263
+    content: s
+  - delay: 281
+    content: ' '
+  - delay: 160
+    content: c
+  - delay: 141
+    content: o
+  - delay: 221
+    content: 'n'
+  - delay: 482
+    content: f
+  - delay: 144
+    content: i
+  - delay: 342
+    content: g
+  - delay: 401
+    content: '-'
+  - delay: 162
+    content: s
+  - delay: 80
+    content: e
+  - delay: 244
+    content: t
+  - delay: 320
+    content: ' '
+  - delay: 182
+    content: '-'
+  - delay: 122
+    content: '-'
+  - delay: 180
+    content: p
+  - delay: 138
+    content: o
+  - delay: 122
+    content: r
+  - delay: 186
+    content: t
+  - delay: 97
+    content: ' '
+  - delay: 163
+    content: /
+  - delay: 119
+    content: d
+  - delay: 21
+    content: e
+  - delay: 165
+    content: v/
+  - delay: 561
+    content: t
+  - delay: 141
+    content: t
+  - delay: 283
+    content: 'y'
+  - delay: 282
+    content: U
+  - delay: 165
+    content: 'SB0 '
+  - delay: 498
+    content: '-'
+  - delay: 485
+    content: '-'
+  - delay: 142
+    content: c
+  - delay: 119
+    content: o
+  - delay: 301
+    content: 'n'
+  - delay: 283
+    content: f
+  - delay: 162
+    content: i
+  - delay: 199
+    content: g
+  - delay: 204
+    content: ' '
+  - delay: 138
+    content: c
+  - delay: 102
+    content: o
+  - delay: 122
+    content: 'n'
+  - delay: 124
+    content: 'fig.toml '
+  - delay: 620
+    content: "\r\n\e[?2004l\r"
+  - delay: 112
+    content: "\e[32m\e[1mConfig set successfully!\e[0m\r\n"
+  - delay: 20
+    content: "\e]0;calin@calinpc:~\e\\\e]7;file://calinpc/home/calin\e\\\e[?2004h\e]0;calin@calinpc: ~\a\e[01;32mcalin@calinpc\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1357
+    content: s
+  - delay: 100
+    content: e
+  - delay: 142
+    content: 'n'
+  - delay: 123
+    content: s
+  - delay: 141
+    content: u
+  - delay: 98
+    content: s
+  - delay: 404
+    content: ' '
+  - delay: 765
+    content: c
+  - delay: 119
+    content: o
+  - delay: 264
+    content: 'n'
+  - delay: 705
+    content: f
+  - delay: 182
+    content: i
+  - delay: 441
+    content: g
+  - delay: 202
+    content: '-'
+  - delay: 203
+    content: g
+  - delay: 79
+    content: e
+  - delay: 119
+    content: t
+  - delay: 183
+    content: ' '
+  - delay: 99
+    content: '-'
+  - delay: 144
+    content: '-'
+  - delay: 162
+    content: p
+  - delay: 137
+    content: o
+  - delay: 63
+    content: r
+  - delay: 162
+    content: t
+  - delay: 40
+    content: ' '
+  - delay: 222
+    content: /
+  - delay: 80
+    content: d
+  - delay: 38
+    content: e
+  - delay: 167
+    content: v/
+  - delay: 319
+    content: t
+  - delay: 140
+    content: t
+  - delay: 202
+    content: 'y'
+  - delay: 205
+    content: "\a"
+  - delay: 1085
+    content: U
+  - delay: 164
+    content: 'SB0 '
+  - delay: 460
+    content: "\r\n\e[?2004l\r"
+  - delay: 107
+    content: "[general]\r\nname = \"Sensus\"\r\n\r\n[battery]\r\nonboard-sample-interval = \"90s\"\r\nprobe-sample-interval = \"15s\"\r\n\r\n[plugged]\r\nonboard-sample-interval = \"10s\"\r\nprobe-sample-interval = \"10s\"\r\n\r\n[probe_calibration]\r\n100000 = \"100.0%\"\r\n1600000 = \"14.0%\"\r\n\r\n"
+  - delay: 21
+    content: "\e]0;calin@calinpc:~\e\\\e]7;file://calinpc/home/calin\e\\\e[?2004h\e]0;calin@calinpc: ~\a\e[01;32mcalin@calinpc\e[00m:\e[01;34m~\e[00m$ "
+  - delay: 1987
+    content: "\e[?2004l\r\r\nlogout\r\n"
