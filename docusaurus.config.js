@@ -98,19 +98,6 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      imageZoom: {
-        // CSS selector to apply the plugin to, defaults to '.markdown img'
-        selector: '.markdown img',
-        // Optional medium-zoom options
-        // see: https://www.npmjs.com/package/medium-zoom#options
-        // options: {
-        //   margin: 24,
-        //   background: '#BADA55',
-        //   scrollOffset: 0,
-        //   container: '#zoom-container',
-        //   template: '#zoom-template',
-        // },
-      },
     }),
   scripts: [
     {
@@ -119,6 +106,9 @@ const config = {
       "data-domain": "sensus.klausen.tech",
     },
   ],
+  stylesheets: [
+    "https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap",
+  ],  
   plugins: [
     [
       "@docusaurus/plugin-ideal-image",
@@ -130,7 +120,6 @@ const config = {
         disableInDev: false,
       },
     ],
-    "plugin-image-zoom",
   ],
 };
 
