@@ -105,9 +105,14 @@ const config = {
       defer: true,
       "data-domain": "sensus.klausen.tech",
     },
+    {
+      src: "https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js",
+      defer: true
+    }
   ],
   stylesheets: [
     "https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap",
+    "https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css"
   ],  
   plugins: [
     [
