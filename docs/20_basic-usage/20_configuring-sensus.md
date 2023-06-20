@@ -17,7 +17,7 @@ The demo configuration should be self-explanatory, however here's a table descri
 
 ## Read and write the configuration to Sensus
 
-After you adapted the default_config.toml file to suit your desired application, you can program Sensus with the given configuration by connecting it via USB and running:
+After you adapted the [default_config.toml](https://github.com/Ardelean-Calin/sensus-cli/blob/main/default_config.toml) file to suit your desired application, you can program Sensus with the given configuration by connecting it via USB and running:
 
 `sensus config-set --port <your_port> --config <your_config.toml>`
 
