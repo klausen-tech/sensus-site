@@ -3,7 +3,7 @@ title: First Setup
 sidebar_position: 10
 ---
 
-import Figure from '@site/src/components/figure';
+import {Figure, CenteredFigure} from '@site/src/components/figure';
 
 # First Setup
 
@@ -20,7 +20,7 @@ If you ordered **before May 24, 2023** please add a smidge of hot glue or silico
 
 <details>
 <summary>Click to see what I mean. This step is only necessary if you ordered before 24 May 2023.</summary>
-<Figure caption="Isolate the temperature sensor" src="/img/probe-glue.png" />
+<CenteredFigure caption="Isolate the temperature sensor" src="/img/probe-glue.png" />
 </details>
 
 ### Step 1 - Prepare the Soil Probe
@@ -31,32 +31,44 @@ Insert the cable with the **blue side up**. Make sure the cable is inserted all 
 Close the clamshell connector. You should feel a satisfying click.
 
 <div className="figure-container">
-    <Figure caption="Open the clamshell connector" src="/img/probe1.png" />
-    <Figure caption="Insert the cable (blue side up)" src="/img/probe2.jpg" />
-    <Figure caption="Close the clamshell" src="/img/probe3.jpg" />
+    <CenteredFigure caption="Open the clamshell connector" src="/img/probe1.png" />
+    <CenteredFigure caption="Insert the cable (blue side up)" src="/img/probe2.jpg" />
+    <CenteredFigure caption="Close the clamshell" src="/img/probe3.jpg" />
 </div>
 
 
 ### Step 2 - Connect the Soil Probe
 The same steps as in Step 1 need to be done for Sensus, as well. However in order to do that, you need to remove the case first:
 
-<Figure caption="The case is easiest to remove if pushing up from the USB-C port" src="/img/case1.png" />
+<CenteredFigure caption="The case is easiest to remove if pushing up from the USB-C port" src="/img/case1.png" />
 
 <div className="figure-container">
-    <Figure caption="Insert the cable (blue side up)" src="/img/case3.jpg" />
-    <Figure caption="Insert the top part of the case" src="/img/case4.jpg" />
+    <CenteredFigure caption="Insert the cable (blue side up)" src="/img/case3.jpg" />
+    <CenteredFigure caption="Insert the top part of the case" src="/img/case4.jpg" />
 </div>
 
 ### Step 3 - Power up
 You can power sensus either via a CR2032 battery, via USB-C or both. The easiest way to make sure everything works correctly is to plug in a USB-C cable. If everything is OK, the onboard LED should transition through all colors and then turn off.
 
-<Figure caption="Sensus powered via USB-C" src="/img/power1.jpg" />
+<CenteredFigure caption="Sensus powered via USB-C" src="/img/power1.jpg" />
 
 Alternatively, you can open the back of the case to insert a CR2032 battery, as shown in the images below:
   
-<Figure caption="Rotate counter-clockwise to open" src="/img/power2.png" />
+<CenteredFigure caption="Rotate counter-clockwise to open" src="/img/power2.png" />
 
 <div className="figure-container">
-    <Figure caption="" src="/img/power3.png" />
-    <Figure caption="Insert battery with positive side up" src="/img/power4.png" />
+    <CenteredFigure caption="" src="/img/power3.png" />
+    <CenteredFigure caption="Insert battery with positive side up" src="/img/power4.png" />
 </div>
+
+### Step 4 - Insert the soil probe
+
+If you got a soil probe, now is the time to insert it in your plant pot:
+
+
+<Figure caption="Do not exceed the marker on the probe!" src="/img/probe_inserted.png" imgStyle={{maxWidth: "500px", textAlign: "center"}} />
+
+
+:::info
+For proper functioning, please do not insert the soil probe deeper than the marking shows.
+:::

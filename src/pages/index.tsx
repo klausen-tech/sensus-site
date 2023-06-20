@@ -13,7 +13,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <img src={useBaseUrl('/img/sensus.jpg')} style={{width: 400, borderRadius: "50%"}} />
+        <img src={useBaseUrl('/img/sensus.jpg')} style={{width: 370, borderRadius: "50%"}} />
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
