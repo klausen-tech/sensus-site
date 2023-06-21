@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
 ---
+import ZoomImage from '@site/src/components/imageZoom'
 
 # Homeassistant integration
 
@@ -11,7 +12,11 @@ Simply click the button below to open your Homeassistant Integrations tab:
 Due to Sensus using the [BTHome data format](https://bthome.io/), your device should automatically appear and present itself as configurable.
 **If it doesn't, make sure you have the Bluetooth integration enabled in Homeassistant.**
 
-![](img/integration.webp)
+![](./img/integration.webp)
+
+After you configure it, the Sensus device page will show something like this:
+
+![](./img/sensors.png)
 
 ## Entity explainations
 
@@ -23,6 +28,17 @@ Here's a table of all the entities and their respective meaning:
 | Humidity          |   This is the relative air humidity, in percent, measured with the on-board SHTC3 sensor   |
 | Illuminance    |  This is the illuminance level measured in lux with the on-board OPT3001 sensor   |
 | Voltage |  This is the measured battery/supply voltage   |
-| Temperature |  This is the on-board temperature, in degrees Celsius, measured by the onboard SHTC3 sensor. <br/> <br/> Note: This entity is called "Temperature 1" when a soil probe is connected.   |
+| Temperature 1 |  This is the on-board temperature, in degrees Celsius, measured by the onboard SHTC3 sensor. <br/> <br/> **Note:** This entity is called "Temperature" when no soil probe is connected.   |
 | Moisture |  **Probe only** - The soil moisture, in percent   |
-| Temperature_2 |  **Probe only** - The soil temperature, in degrees Celsius   |
+| Temperature 2 |  **Probe only** - The soil temperature, in degrees Celsius   |
+
+## Example Homeassistant Config
+
+This is an example of what you can do with Sensus. This is my own Plant dashboard at home.
+
+To create this configuration, I have used the following Homeassistant integrations:
+- [Openplantbook integration](https://github.com/Olen/home-assistant-openplantbook) - for automatically getting the required values for soil moisture, temperature, etc. for each plant
+- [Homeassistant Plant](https://github.com/Olen/homeassistant-plant) - an alternative plant component that fetches data from the Openplantbook integration
+- [Flower Card](https://github.com/Olen/lovelace-flower-card/tree/new_plant) - a nicer flower card to display information about a plant
+
+<ZoomImage src="./img/dashboard.png" style={{maxWidth: 300, textAlign: "center"}}/>
