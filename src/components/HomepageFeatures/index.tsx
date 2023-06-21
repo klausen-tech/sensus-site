@@ -64,7 +64,7 @@ const FeatureList: FeatureItem[] = [
     title: 'USB-C 🔌',
     description: (
       <>
-        Can't believe this is a <i>feature</i> in ${new Date().getFullYear()} . Used for logging additional data from Sensus, as well as updating and configuring Sensus.
+        Can't believe this is a <i>feature</i> in {new Date().getFullYear()}. Used for logging additional data from Sensus, as well as updating and configuring Sensus.
       </>
     ),
   },
