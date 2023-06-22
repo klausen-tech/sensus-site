@@ -91,6 +91,15 @@ const config = {
               },
             ],
           },
+          {
+            title: "Contact",
+            items: [
+              {
+                label: "Email",
+                href: "mailto:contact@klausen.tech",
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Klausen Tech`,
       },
