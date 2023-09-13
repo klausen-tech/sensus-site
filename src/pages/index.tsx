@@ -38,7 +38,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Homeassistant compatible, Wireless Plant and Environment Sensor with 1 year battery life 🪴">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
