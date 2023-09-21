@@ -12,7 +12,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Plug-and-play 🎮',
     description: (
       <>
-        <strong>Sensus</strong> was designed with <strong>Homeassistant</strong> in mind. Just power it up and it should appear as a new integration.
+        <strong>Sensus</strong> was designed with <strong>Homeassistant</strong> in mind. Just power it up and it will appear as a new integration.
         Of course, you can also use it without Homeassistant.
       </>
     ),
