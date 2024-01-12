@@ -110,9 +110,9 @@ const config = {
     }),
   scripts: [
     {
-      src: "https://plausible.calin.cloud/js/script.outbound-links.js",
-      defer: true,
-      "data-domain": "sensus.klausen.tech",
+      src: "https://umami.calin.cloud/script.js",
+      async: true,
+      "data-website-id": "870a227a-8820-4e94-bd14-9dcb11a89d56",
     },
     {
       src: "https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js",
