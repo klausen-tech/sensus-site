@@ -112,7 +112,7 @@ const config = {
     {
       src: "https://umami.calin.cloud/script.js",
       async: true,
-      "data-website-id": "a006ea19-7208-4ce9-876f-3111d2f06a18",
+      "data-website-id": "bc63993d-6f39-4ddc-b0da-ba063f847b5c",
     },
     {
       src: "https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js",
